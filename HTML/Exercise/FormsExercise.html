@@ -29,7 +29,10 @@
 		<lable for="email">Email:</lable>
 			<input name="EMAIL" id="email" type="email" required>
 		<lable for="password">Password:</lable>
-			<input name="PASSWORD" id="password" type="password" minlength="5" maxlength="10" required>
+		<!--Password Validation using min/max length. It isn't supported by all browsers, just some-->
+			<!-- <input name="PASSWORD" id="password" type="password" minlength="5" maxlength="10" required> -->
+		<!--Password validation using the pattern attr allows you to use RegEx for validation purposes and is supported by all browsers.-->
+			<input name="PASSWORD" id="password" type="password" pattern=".{5,10}" title="Enter a password consisting of 5 to 10 characters" required>
 
 		</br>
 

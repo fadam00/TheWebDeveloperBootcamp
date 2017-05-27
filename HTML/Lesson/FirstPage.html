@@ -69,5 +69,45 @@
 	</tbody>
 	</table>
 
+	<!-- Forms! -->
+
+	<h1>Log In</hi>
+
+	<!-- action: where the form send data to -->
+	<!-- method: what HTTP method (get/post) -->
+	<form>
+		<input name="username" type="text" placeholder = "Username">	
+		<input name="password" type="password" placeholder = "Password">
+		<input type="submit">
+	</form>
+
+	<!-- Labels! -->
+	<!-- Two Ways to do Labels -->
+
+	<!-- Nested -->
+	<form>
+		<lable>
+			Username:
+			<input name="username" type="text" placeholder = "Username">
+		</lable>
+		<lable>
+			Password:
+			<input name="password" type="password" placeholder = "Password">
+		</lable>
+		<input type="submit">
+	</form>
+
+	<!--Separate using "for" and "id" attributes-->
+	<form>
+		<lable for="username">Username:</lable>
+			<input id="username" type="text" placeholder = "Username">	
+		<lable for="password">Password:</lable>
+			<input id="password" type="password" placeholder = "Password">
+		<input type="submit">
+	</form>
+
+
+
+
 </body>
 </html>

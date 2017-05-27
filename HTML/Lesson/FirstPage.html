@@ -85,7 +85,7 @@
 	<!-- Two Ways to do Labels -->
 
 	<!-- Nested -->
-	<form>
+<!-- 	<form>
 		<lable>
 			Username:
 			<input name="username" type="text" placeholder = "Username">
@@ -96,8 +96,9 @@
 		</lable>
 		<input type="submit">
 	</form>
-
+ -->
 	<!--Separate using "for" and "id" attributes-->
+	<h2>Non-Validated</h2>
 	<form>
 		<lable for="username">Username:</lable>
 			<input id="username" type="text" placeholder = "Username">	
@@ -106,6 +107,28 @@
 		<input type="submit">
 	</form>
 
+	<!--Validations!-->
+	<h2>Validated</h2>
+
+	<!--Presence Validation using required-->
+	<form>
+		<lable for="username">Username:</lable>
+			<input id="username" type="text" placeholder = "Username" required>	
+		<lable for="password">Password:</lable>
+			<input id="password" type="password" placeholder = "Password" required>
+		<input type="submit">
+	</form>
+
+	<!--Validation to make sure it's an email-->
+	<form>
+		<lable for="username">Username:</lable>
+			<input id="username" type="email" placeholder = "Email" required>	
+		<lable for="password">Password:</lable>
+			<input id="password" type="password" placeholder = "Password" required>
+		<input type="submit">
+	</form>
+
+	<h1>Yay</h1>
 
 
 

@@ -1,0 +1,16 @@
+li {
+	border: 2px solid red;
+}
+
+/* IDs are represented by #. Used to single out a specific element */
+#special {
+
+	background:yellow;
+}
+
+/*Classes are represented by ".". Used to select a group of elements. */
+
+.completed {
+	text-decoration: line-through;
+}
+

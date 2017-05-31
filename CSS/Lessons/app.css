@@ -1,11 +1,23 @@
+/*selector{
+	property: value;
+} */
+
 body {
+
+	background: pink;
+	/*
 	background: url(http://dendro.cnre.vt.edu/dendrology/images/Carya%20ovata/wood.jpg);
-	background-repeat: no-repeat; /*prevents image repeating*/
-	background-size: cover; /*stretches image to cover body*/
+	background-repeat: no-repeat; prevents image repeating
+	background-size: cover; stretches image to cover body*/
+
 }
 
 h1 {
 	color: #FFF069;
+	/* border-color: blue;
+		border-width: 5px;
+		border-style: solid;*/
+	border: blue 5px solid;
 }
 
 li {

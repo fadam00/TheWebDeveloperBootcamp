@@ -1,0 +1,48 @@
+/*Element*/
+
+	li {
+
+	}
+
+/*Class*/
+
+	.hello {
+
+	}
+
+/*ID*/
+
+	#hi {
+
+	}
+
+/*Star: Selects EVERYTHING*/
+
+	*{
+
+	}
+
+/*Descendant Selector select element underneath in nest*/
+
+	li a {
+
+	}
+
+/*Adjacent Selector select next element on same level*/
+	
+h4 + ul {
+
+}
+
+
+/*Attribute Selector selects elements with certain attributes*/
+
+a["attribute in element you want to select"] {
+
+}
+
+/*nth of type*/
+
+ul:nth-of-type(3){
+	
+}

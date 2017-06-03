@@ -1,0 +1,60 @@
+/*font-family*/
+p{
+	font-family:'Oswald', Arial;
+}
+
+h1 {
+	font-family:'Raleway', Georgia;
+}
+
+/*font-size*/
+
+/*You can use pixels, percentages, and em's. Em's is dynamic and it changes
+the font relative to the size of its parent element.*/
+
+body{
+	font-size:10px;
+}
+
+h1{
+	font-size: 5em ;
+}
+
+p{
+	font-size: 2em;
+}
+
+span{
+	font-size: 3em;
+}
+
+/*font-weight*/ /*How think the font is*/
+
+p{
+	font-weight: normal;
+}
+
+/*line-height*/ /*Multiplies the line height per number given*/
+
+p{
+	line-height: 2;
+}
+
+/*text-align*/
+p{
+	text-align: right;
+}
+
+h1{
+	text-align: center;
+}
+
+/*text-decoration*/
+
+p{
+	text-decoration: underline;
+}
+
+h1 {
+	text-decoration: strikethrough;
+}

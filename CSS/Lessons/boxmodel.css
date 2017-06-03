@@ -1,0 +1,27 @@
+/*Box Model!*/
+
+p{
+	/*Content - Width and Height*/
+
+	width:50%; /*When using %, it is a % of the parent element*/
+	
+	/*Border*/
+
+	border: 2px solid blue;
+
+	/*Padding - space inside of the border*/
+
+	padding: 10px;
+	/*padding-left,-right,-top,-bottom*/
+
+
+	/*Margin - space outside of the border*/
+	margin: 100px;
+	/*margin-left,-right,-top,-bottom*/
+	/*margin AUTO when using auto on left and right, it will
+	automatically center the element*/
+
+	/*margin: 0 auto 0 auto;
+		margin: 0 auto;*/
+
+}

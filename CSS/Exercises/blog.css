@@ -1,0 +1,32 @@
+/*border: #bdc3c7;
+date: #3498db;
+h2 color: #2c3e50;
+font: source sans pro;
+*/
+* {
+	font-family: 'Source Sans Pro', serif;
+}
+body {
+	border: 22px solid #bdc3c7;
+	width: 50%;
+	margin: 0 auto 0 auto;
+
+}
+
+div {
+
+	margin: 5%;
+}
+
+.intro{
+	border-left: 4px solid #bdc3c7;
+	padding-left: 1%;
+}
+
+.date{
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	font-weight: 800;
+}

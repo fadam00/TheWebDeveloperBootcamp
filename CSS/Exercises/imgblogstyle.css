@@ -4,3 +4,13 @@ img {
 	float: left;
 	margin: 1.66%;
 }
+
+p {
+	font-family: "Cormorant SC", serif;
+	margin-left: 1.66%;
+	font-size: 23px;
+	font-weight: 800;
+	border-bottom: 3px solid gray;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}

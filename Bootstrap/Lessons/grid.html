@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border: 2px solid purple;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!--A container/row is divided in 12 equal parts. With the grid system you can divide the 12 parts into different columns.--> 
+			<!--lg is large, md is medium, sm is small, xs is extra small. They all correspond to screen sizes. Each number is a division of tjhe grid which consists of a total of 12 parts.-->
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">TOUR DATE</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">TOUR DATE</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">TOUR DATE</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pink">TOUR DATE</div>
+		</div>
+		<div class="row">
+			<!--when you nest a column you're actually splitting the parent column into the children rows"-->
+			<div class="col-lg-6 pink">
+				<div class="row">
+					<div class="col-lg-6 pink">Hello</div>
+					<div class="col-lg-6 pink">Hello</div>
+
+				</div>
+			</div>
+
+<!-- 		
+<div class="row">
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+			<div class="col-lg-1 col-md-2 pink">COL LG 1</div>
+		</div> -->
+	</div>
+
+	<!--NESTED GRIDS -->
+
+
+
+</body>
+</html>

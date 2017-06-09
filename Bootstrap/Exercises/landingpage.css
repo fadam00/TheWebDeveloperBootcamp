@@ -1,0 +1,22 @@
+body{
+	background: url(https://images.unsplash.com/photo-1496284427489-f59461d8a8e6?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=);
+	background-size: cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	font-family:'Mogra', cursive;
+	color:white; /*Only selects h1 and h3 due to specificity of other elements*/
+}
+
+html {
+	height:100%;
+}
+
+
+#content {
+	text-align: center;
+	padding-top: 25%; /*Percentage lends to more responsive design*/
+}
+
+h1{
+	font-size: 5em;
+}

@@ -8,7 +8,7 @@ body{
 }
 
 html {
-	height:100%;
+	height:100%; /*Fixes the image not covering whole screen*/
 }
 
 
@@ -19,4 +19,8 @@ html {
 
 h1{
 	font-size: 5em;
+}
+
+.btn {
+	background-color: #fab333;
 }

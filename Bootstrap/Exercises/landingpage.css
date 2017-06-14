@@ -24,3 +24,9 @@ h1{
 .btn {
 	background-color: #fab333;
 }
+
+hr {
+	width: 450px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border-top: 1px solid #f8f8f8;
+}

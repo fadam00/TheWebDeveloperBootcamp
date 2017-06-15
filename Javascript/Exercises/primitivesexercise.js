@@ -6,3 +6,4 @@
 
 //3. 
 "hello".length % "hi\\".length //SOLUTION = 2
+

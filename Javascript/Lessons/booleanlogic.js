@@ -27,3 +27,26 @@ var x = 10;
 var y = "a";
 
 y == "b" || x >= 10 //TRUE
+
+var x = 3;
+var y = 8;
+
+!(x == "3" || x === y) && !(y != 8 && x <= y)
+//!(true) && !(false)
+//false && true
+//FALSE
+
+
+//Truthy and Falsey Values
+//Values that aren't actually true or false, are
+//still inherently "truthy" or "falsey" when evaluated in 
+//boolean context
+
+//Falsy Values:
+//false, 0, "", null, undefined, NaN everything else is truthy
+
+var str= ""
+var msg = "haha!"
+var isFunny = "false" //It's a string which is truthy
+
+!((str || msg) && isFunny)//FALSE

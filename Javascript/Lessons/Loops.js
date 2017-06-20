@@ -44,7 +44,17 @@ while(count < str.length) {
 //Infinite loops occur when the terminating condition in a loop is never true
 var count = 0;
 
-whilr(count < 10){
+while(count < 10){
 	console.log("Infinite loop!")
 	//THIS WILL RUN INDEFINITELY. YOU MUST ADD AN INCREMENT/DECREMENT TO MAKE STATEMENT FALSE TO BREAK LOO
+}
+
+//Problem Sets
+//Print all numbers between -10 and 19
+
+var count = -10;
+
+while(count < 20){
+	console.log(count);
+	count ++;
 }

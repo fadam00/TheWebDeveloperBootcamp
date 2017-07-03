@@ -1,6 +1,6 @@
 
 
-
+//Find out if it's even
 
 function isEven(num){
 	if(num % 2 === 0 ){
@@ -19,6 +19,8 @@ function isEven(num){
 }
 
 isEven(4);
+
+//Find the factorial of a number
 
 
 function factorial(num){
@@ -52,6 +54,22 @@ function factorial(num){
 }
 
 factorial(5)
+
+//kebabtoSnakeCase, replace "-" with "_"
+
+function replace(str){
+	//If the character "-" isn't found return the str untouched
+	if(str.indexOf("-") === -1){
+		return str
+
+	} else {
+		//RegEx used to capture all instances of the "-" character
+	reStr = str.replace(/-/g, "_");
+		return reStr
+	}
+}
+
+replace("Hello-There!");
 
 
 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Scope</title>
+</head>
+<body>
+
+<h1>Intro to JS Scope</h1>
+
+	<p>Scope is the <em>context</em> that code is executed in</p>
+
+	<p>When we define something outside of a function, we still have access to it INSIDE a function. The opposite isn't true.</p>
+
+	<p> var y = 10;
+		function doMath(){
+		 console.log(y);
+		}
+
+		doMath() returns 10
+
+		BUT NOT THE OTHER WAY AROUND
+	</p>
+
+	<p>If a variable is DECLARED OUTSIDE the function is can be used inside of it, AND ITS VALUE WILL BE CHANGED if changed inside the function.</p>
+
+		<p>var x = 10;
+
+		function doMoreMath(){
+			x = 12;
+			console.log(x);
+		}
+
+		doMoreMath() will return 12</p>
+	
+	<p>However, if the same variable is DECLARED inside of the function, JavaScript will treat it as separate variables</p>
+
+		<p>var z = 9;
+
+		function doSomething(){
+		var z = 10;
+		console.log(z);
+		}
+
+		</p>
+
+		<p>If we call z, it returns 9</p>
+		<p>If we call the function doSomething(), it returns 10</p>
+
+	 <p>Every function has its own scope and it isn't shared between functions</p>
+	 
+
+
+<script src="JSScope.js"></script>
+</body>
+</html>

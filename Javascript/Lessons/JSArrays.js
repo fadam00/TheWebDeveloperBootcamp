@@ -79,6 +79,15 @@ var nums = [1, 2, 3];
 var otherNums = nums.slice();
 
 //both arrays are [1,2,3];
+
+//NESTED ARRAYS
+var friendGroups = [
+	["Harry", "Ron", "Hermione"],
+	["Malfoy", "Crabbe", "Goyle"],
+	["Mooney", "Wormtail", "Prongs"]
+];
+
+console.log(friendGroups[2][0]); //"Mooney"
  
  
 

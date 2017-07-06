@@ -87,7 +87,7 @@ var friendGroups = [
 	["Mooney", "Wormtail", "Prongs"]
 ];
 
-console.log(friendGroups[2][0]); //"Mooney"
+console.log(friendGroups[2][0]); //"Mooney "
  
  
 

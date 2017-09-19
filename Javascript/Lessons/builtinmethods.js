@@ -1,4 +1,4 @@
-//Useful Built-In Methods!
+//Useful Built-In Methods! Methods are actions that can be performed on objects 
 
 //alert
 alert(passInSomethingToBeAlerted);

@@ -45,7 +45,7 @@ colors.pop() //removes green
 
 //SHIFT and UNSHIFT(the opposite of push and pop)
 
-//Unshift ADDS to the FRONT of an array
+//Unshift ADDS to the BEGINNING of an array
 var colors = ["red", "orange", "yellow"];
 colors.unshift("infrared");
 //["infrared", "red", "orange", "yellow"];
@@ -88,6 +88,52 @@ var friendGroups = [
 ];
 
 console.log(friendGroups[2][0]); //"Mooney "
+
+
  
- 
+ //ARRAY ITERATION
+ //Use for loops to loop over an array.
+ //We make use of the array's length property.
+
+
+var colors = ["red", "green", "blue", "orange"];
+
+for(var i = 0; i < colors.length; i++){
+	alert(colors[i]);
+}
+
+//forEach provides built-in way of iterating over an array
+//Kinda like the one for Ruby
+//You pass the iteration method a function
+// the argument is the item in the array
+//to do something WITH EACH ITEM in the array
+//Syntax : arr.forEach(function(color){
+	// the argument is the item in the array
+
+
+var colors = ["red", "green", "blue", "orange"];
+
+colors.forEach(function(){
+	//if you don't pass it an argument it will iterate the following block of 
+	//code by the number of items in the array
+	console.log("Hello"); //It will console.log it 4 separate times.
+})
+
+colors.forEach(function(color){
+	//If you pass it an argument, the argument will hold
+	//the value of each item in the array iterate each item.
+	console.log(color);
+})
+
+//You can also pass it an outside function
+function printColor(color){
+	console.log("********");
+	console.log(color);
+	console.log("********");
+}
+
+//Instead of typing a function in the loop, you just pass it one.
+colors.forEach(printColor//It doesn't get parentheses right after because JS would run it immediately. You want the loop to run it);
+	
+
 

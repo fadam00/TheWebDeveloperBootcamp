@@ -13,6 +13,9 @@
 	10 % 3 //1
 	24 % 2 //0
 	15 % 11 //4
+	100 % 3 //1 //Divide 3 into 100 as many times as it can go in,
+	//so that's 33 then we subtract 33 x 3 from 100, and it gives us 1.
+
 
 //Strings
 "Hello World" //If it is inside of quotes it is a string.

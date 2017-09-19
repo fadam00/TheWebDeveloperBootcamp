@@ -3,7 +3,7 @@
 
 //If, Else If, Else
 
-var age = 29;
+var age = 16;
 
 if(age < 18) {
 	console.log("Sorry, you're not old enough to enter the venue.");
@@ -25,18 +25,17 @@ if(age < 0){
 	console.log("Please enter a valid age.");
 }
 
-else if(age === 21){
-	console.log("Happy 21st! Have a shot on us.");
+else if (age === 21){
+	console.log("Happy 21st Birthday!");
 }
 
-else if((age % 2) === 1){
+else if ((age % 2) === 1) {
 	console.log("Your age is odd!");
 }
 
-else if(age % Math.sqrt(age) === 0){
-	console.log("Perfect square!")
-}
-
-else {
-	console.log("Y'all ain't got nuffin'!");
+else if (age % Math.sqrt(age) === 0)
+	//16 % 4 = 0 
+	//29 % 
+	{
+	console.log("Your age is a perfect square!");
 }

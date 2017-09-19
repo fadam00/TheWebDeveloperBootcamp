@@ -28,3 +28,7 @@ var age;
 //null is "explicitly nothing"
 var currentPlayer = "charlie";
 currentPlayer = null; //game over
+
+
+//Javascript uses dynamic case.
+//Javascript words should use camelCase.

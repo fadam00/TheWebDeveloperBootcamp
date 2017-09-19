@@ -1,5 +1,5 @@
 var age = prompt("What is your age?");
-var leapYearsAdjustment = age/4 
+var leapYearsAdjustment = Math.round(age/4); 
 var daysAlive = (age * 365) + leapYearsAdjustment;
 
 console.log(leapYearsAdjustment);

@@ -13,8 +13,9 @@ var y = null;
 y == undefined //true
 y === undefined //false
 
-// "==" performs type coercion, whereas "===" does not.
-//Try using "===" as much as possible for specificity
+// "==" performs type coercion, whereas "===" does not. 
+//Type coercion is when JS tries to turn the two variables into equal types.
+//Try using "===" as much as possible to be specific.
 
 //Logical Operators, used to chain boolean logic
 //Assuming x = 5

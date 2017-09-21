@@ -68,7 +68,10 @@ var junkObject = {
 someObject.friends[0].name
 //Arrays vs Objects
 
-//Arrays are a list bound to order by index. Objects is just a huge unordered collection of key:value pairs
+//Arrays are a list bound to order by index. 
+//Objects is just an unordered collection of key:value pairs
+// (like a dictionary, look up the word(key) and get the def(value)
+
 //An array is a very special type of an object...the keys are always numbers (the indexes), for actual object you can
 //name your key.
 //To add stuff to an array you need methods. For objects you can just use bracket or dot notation to add any key and any value you want.
@@ -92,3 +95,70 @@ var posts = [
 
 //Retrieve second comment from first post
 //posts[0].comments[1]
+
+//JS Methods
+
+//Objects can have functions inside of them which are called methods.
+
+//console.log()
+//console is a method and log() is a function inside of it.
+
+var obj = {
+	name: "Chuck",
+	age: 45,
+	isCool: false,
+	friends: ["bob", "tina"],
+	//We can add functions as properties as well
+	add: function(x,y) {
+		return x + y;
+	}
+}
+
+//To call a functions in an object
+//It's called a method
+
+obj.add(10,5); //15
+
+//Namespace collision is just a fancy way of saying 
+//that we have 2 different things that have the same name 
+
+var dog = {
+	speak: function(){
+		console.log("Woof!");
+	}
+};
+
+var cat = {
+	speak: function(){
+		console.log("Meow!");
+	}
+};
+
+dog.speak();
+cat.speak();
+
+//Keyword THIS
+var comments = {};
+
+comments.data = ["Good job!", "Bye", "Cool!"];
+
+//Now say I have a function inside of the object comments
+comments.print = function(arr){
+	arr.forEach(function(element){
+		console.log(element);
+	});
+};
+
+//Here's how we've been doing functions
+//We call the function and then pass it the argument.
+
+comments.print(comments.data);
+
+//Is there a way to access the data within the object as an argument for the function?
+//Use THIS
+
+comments.print = function(){
+	this.data.forEach(function(element){
+		console.log(element);
+	});
+};

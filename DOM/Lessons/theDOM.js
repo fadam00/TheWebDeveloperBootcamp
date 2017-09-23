@@ -58,3 +58,99 @@ h1.style.color = "pink";
 
 // document.querySelectorAll();
 	// va lis = document.querySelectorAll("li"); 
+
+//DOM MANIPULATION
+	//Changing an element's style
+	//adding/removing classes
+	//changing the content of a tag
+	//changing tag's attributes(src,href,etc)
+
+//STYLE
+//The style property is one way to manipulate an element's style
+
+//Select
+var tag = document.getElementById("highlight");
+
+//Manipulate
+tag.style.color = "blue";
+tag.style.border = "10 px solid red";
+tag.style.fontSize = "70px";
+tag.style.background = "yellow";
+tag.style.marginTop = "200px";
+
+//Separation of Concerns
+//STRUCTURE - HTML / BEHAVIOR - JS / PRESENTATION - CSS
+//It is recommended for styles to be defined in a separate file. The style property 
+//allows for quick styling, for example for testing purposes.
+//Rather than directly manipulating style with JS, we can define a CSS class and then toggle
+//it on and off with JS
+
+//INSTEAD OF THIS:
+
+var tag = document.getElementById("highlight");
+tag.style.color = "blue";
+tag.style.border = "10 px solid red";
+
+/*DEFINE A CLASS IN CSS*/
+.some-class {
+	color: blue;
+	border: 10px solid red;
+}
+
+var tag = document.getElementById("highlight");
+//ADD THE NEW CLASS TO THE SELECTED ELEMENT
+tag.classList.add("some-class");
+
+//classList
+//A read-only list that contains classes for a given element. 
+//IT IS NOT AN ARRAY!!
+
+/*DEFINE A CLASS IN CSS*/
+.some-class {
+	color: blue;
+	border: 10px solid red;
+}
+
+
+var tag = document.querySelector("h1");
+
+//ADD A CLASS TO THE SELECTED ELEMENT
+tag.classList.add("some-class");
+
+//REMOVE A CLASS
+tag.classList.remove("some-class");
+
+//TOGGLE A CLASS
+tag.classList.toggle("some-class");
+
+//textContent
+//Returns a string of all the text contained in a given element
+
+//<p> This is an <strong>awesome</strong> paragraph </p>
+
+//Select the <p> tag:
+var tag = document.querySelector("p");
+
+//Retrieve the textContanct:
+tag.textContent //"This is an awesome paragraph"
+
+//Alter the textConent:
+tag.textContent = "blah blah blah";
+
+//Need to be careful what's inside of the text.
+//It will overwrite all tags within the text...to keep the tags intact use:
+
+
+//innerHTML
+//Similar to textContent, except it returns a string of all the HTML contained in a given
+//element
+
+//<p> This is an <strong>awesome</strong> paragraph </p>
+
+//Select the <p> tag:
+var tag = document.querySelector("p");
+
+tag.innerHTML
+//<p> This is an <strong>awesome</strong> paragraph </p>
+
+

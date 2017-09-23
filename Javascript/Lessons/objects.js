@@ -155,10 +155,14 @@ comments.print = function(arr){
 comments.print(comments.data);
 
 //Is there a way to access the data within the object as an argument for the function?
+//Instead of taking any array as an argument, we want to use the data we already have in the object.
 //Use THIS
 
 comments.print = function(){
-	this.data.forEach(function(element){
+	this.data.forEach(function(element){//The keywork THIS refers to the object comments
 		console.log(element);
 	});
 };
+
+//Now it will print the data within the object without passing it an argument.
+comments.print();

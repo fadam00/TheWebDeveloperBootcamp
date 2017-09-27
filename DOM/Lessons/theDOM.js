@@ -150,7 +150,78 @@ tag.textContent = "blah blah blah";
 //Select the <p> tag:
 var tag = document.querySelector("p");
 
-tag.innerHTML
+tag.innerHTML = "Someone clicked me! :)"
 //<p> This is an <strong>awesome</strong> paragraph </p>
+
+
+//ATTRIBUTES
+
+//Use getAttribute() and setAttribute() tro read and write
+//attributes like src or href
+
+<a href="www.google.com">I'm a link</a>
+<img src="logo.png">
+
+var link = document.querySelector("a");
+link.getAttribute("href"); //"http://www.google.com"
+
+//CHANGE THE ATTRIBUTE`
+link.setAttribute("href","http://www.dogs.com");
+//<a href="www.dogs.com">I'm a link</a>
+
+//TO CHANGE THE IMAGE SRC
+var img = document.querySelector("img");
+img.setAttribute("src", "corgi.png")
+
+//DOM EVENTS
+
+//We can use JS to make websites interactive.
+//Events are everywhere: clicking a button, hovering over a link. dragging and dropping
+//pressing the Enter key
+
+//The Process
+
+//We select an element and then add an EVENT LISTENER
+//"Listen for a click on this <button>"
+//"Listen for a hover event on the <h1>"
+//"Listen for a keypress event on text input"
+
+//The Syntax
+//To add a listener, we use a method called addEventListener
+
+element.addEventListener(type, functionToCall);
+
+var button = document.querySelector("button");
+var paragraph = document.querySelector("p");
+
+button.addEventListener("click", function(){
+	paragraph.innerHTML = "Someone clicked me! :)";
+});
+
+//When the button is clicked the paragraph changes to the messge in the eventlistener.
+
+var h1 = document.querySelector("h1");
+
+h1.addEventListener("click", function(){
+	alert("h1 has been clicked!");
+	h1.style.background = "orange";
+});
+
+//You can have more than one listener on a given element. As seen with the h1.
+
+var ul = document.querySelector("ul");
+
+ul.addEventListener("click", function(){
+	console.log("You clicked the UL!");
+})
+
+//This will select the whole list reardless of li. //You must select li's individually to add a listenener.
+
+var lis = document.querySelectorAll("li");
+for(var i = 0; i < lis.length; i++){
+	lis[i].addEventListener("click", function(){
+		this.style.color = "pink";//Inside of an event listener "this" refers to the item that was clicked/ghovered/acted on 
+	})
+}
 
 
